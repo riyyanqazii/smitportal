@@ -1,0 +1,78 @@
+body {
+    background-color: #f8f9fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+.sidebar {
+    background-color: #2c3e50;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    color: #ecf0f1;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.sidebar .user-profile {
+    display: flex;
+    align-items: center;
+    color: #ecf0f1;
+    padding: 15px;
+}
+
+.content {
+    margin-left: 250px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.day-box {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.day-box.active-day {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.alert.border-start {
+    border-left: 5px solid;
+}
+
+/* Badge and Status Colors */
+.badge.bg-success, .badge.status-approved, .badge.status-paid, .badge.status-present, .badge.status-passed {
+    background-color: #2ecc71 !important;
+}
+
+.badge.bg-warning, .badge.status-submitted {
+    background-color: #f1c40f !important;
+}
+
+.badge.bg-danger, .badge.status-not-approved, .badge.status-expired, .badge.status-absent {
+    background-color: #e74c3c !important;
+}
